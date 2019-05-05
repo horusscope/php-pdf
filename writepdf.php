@@ -25,10 +25,10 @@ class PHPPDF extends FPDF {
 		$this->SetTextColor(180,220,220);
 		$this->SetLineWidth(1);
 		$this->Cell(15);
-		$this->Cell($w+10,6,$PageHeading,1,0,'L',true);
+		$this->Cell($w+10,8,$PageHeading,1,0,'L',true);
 		$this->SetFont('','U', 11);
-		$this->Cell(0,5,'FPDF',0,1,'R',false,'http://www.fpdf.org');
-		$this->Cell(0,5,$PageLinkText,0,1,'R',false,$PageLink);
+		$this->Cell(60,5,'FPDF',0,0,'R',false,'http://www.fpdf.org');
+		$this->Cell(60,5,$PageLinkText,0,0,'R',false,$PageLink);
 		$this->SetFont('','',12);
 		$this->Ln(10); 
 	}
